@@ -2,7 +2,7 @@
 
 ---
 
-##[Демо проекта](https://hacker-news-lac-five.vercel.app/)
+## [Демо проекта](https://hacker-news-lac-five.vercel.app/)
 
 ---
 
