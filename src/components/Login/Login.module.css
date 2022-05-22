@@ -1,0 +1,150 @@
+.overlay {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.overlay_hidden {
+  display: none;
+}
+
+.login {
+  display: flex;
+  position: relative;
+  width: 640px;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+.login__image {
+  width: 200px;
+  box-sizing: border-box;
+  padding: 25px;
+  background-image: url(../../images/kit.webp);
+  background-position: -80px 0;
+  background-size: cover;
+  border-radius: 8px 0 0 8px;
+}
+
+.login__logo {
+  display: block;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background-image: url(../../images/hacker.png);
+  background-color: transparent;
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.login__text {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+}
+
+.login__close {
+  top: 16px;
+  right: 16px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url(../../images/close.svg);
+  background-size: contain;
+  cursor: pointer;
+  border: 0;
+}
+
+.login__form {
+  padding: 50px 50px 16px;
+  width: 440px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__title {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 120px 0 16px;
+}
+
+.login__label {
+  position: relative;
+}
+
+.login__input {
+  height: 46px;
+  width: 100%;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  background: rgb(242, 242, 242);
+  padding: 0 11px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.login__input_error {
+  outline: 2px solid #e52e3a;
+}
+
+.login__input:focus {
+  background: white;
+  outline: 2px solid rgb(92, 205, 247);
+}
+
+.login__input:hover {
+  background: white;
+  outline: 2px solid rgb(92, 205, 247);
+}
+
+.login__submit {
+  height: 48px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #4683d9;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login__submit:hover {
+  background-color: #3177da;
+}
+
+.login__submit:disabled {
+  opacity: 0.7;
+}
+
+.login__link {
+  background-color: transparent;
+  border: 0;
+  color: #3766a9;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.login__error {
+  position: absolute;
+  color: #e52e3a;
+  font-size: 12px;
+  top: 46px;
+  left: 0;
+  line-height: 1.1;
+}
+
+.login__auth {
+  margin: 0 0 0 50px;
+}
