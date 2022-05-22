@@ -2,6 +2,10 @@
 
 ---
 
+##[Демо проекта](https://hacker-news-lac-five.vercel.app/)
+
+---
+
 ## Главная страница с новостями
 
 ![Превью проекта HackerNews](https://github.com/General4056/Hacker-News/blob/main/Demo/main.PNG)
