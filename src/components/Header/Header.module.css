@@ -251,3 +251,27 @@
 .header__account:hover {
   opacity: 0.7;
 }
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0 18px;
+  }
+
+  .header__title {
+    font-size: 20px;
+  }
+
+  .search {
+    width: 400px;
+  }
+  .header__login {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .header__signup {
+    width: 80px;
+    height: 30px;
+  }
+}
