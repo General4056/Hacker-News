@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 import { fetchStories, fetchStoriesIds } from '../../store/reducers/StoriesSlice';
 import { BEST_STORIES } from '../../utils/constants';
-import Naviagation from '../Navigation/Navigation';
+import Naviagation from '../SideMenu/SideMenu';
 import StoryList from '../StoryList/StoryList';
 import styles from '../LatestNewsPage/LatestNewsPage.module.css';
 

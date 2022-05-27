@@ -3,11 +3,13 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 interface popupState {
   loginPopupIsOpened: boolean;
   registerPopupIsOpened: boolean;
+  sidebarIsOpened: boolean;
 }
 
 const initialState: popupState = {
   loginPopupIsOpened: false,
-  registerPopupIsOpened: false
+  registerPopupIsOpened: false,
+  sidebarIsOpened: false
 };
 
 export const popupSlice = createSlice({
@@ -19,11 +21,14 @@ export const popupSlice = createSlice({
     },
     openRegisterPopup(state, action: PayloadAction<boolean>) {
       state.registerPopupIsOpened = action.payload;
+    },
+    openSidebar(state, action: PayloadAction<boolean>) {
+      state.sidebarIsOpened = action.payload;
     }
   },
   extraReducers: {}
 });
 
-export const { openLoginPopup, openRegisterPopup } = popupSlice.actions;
+export const { openLoginPopup, openRegisterPopup, openSidebar } = popupSlice.actions;
 
 export default popupSlice.reducer;

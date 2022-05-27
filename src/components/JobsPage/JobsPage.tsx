@@ -5,7 +5,7 @@ import { JOBS_STORIES } from '../../utils/constants';
 import Header from '../Header/Header';
 import StoryList from '../StoryList/StoryList';
 import styles from '../LatestNewsPage/LatestNewsPage.module.css';
-import Naviagation from '../Navigation/Navigation';
+import Naviagation from '../SideMenu/SideMenu';
 
 const JobsPage: FC = () => {
   const dispatch = useAppDispatch();

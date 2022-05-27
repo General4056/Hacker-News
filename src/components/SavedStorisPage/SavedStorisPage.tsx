@@ -8,7 +8,7 @@ import { IStory } from '../../types/types';
 import { formatDate } from '../../utils/helpers';
 import Comments from '../Comments/Comments';
 import Header from '../Header/Header';
-import Naviagation from '../Navigation/Navigation';
+import Naviagation from '../SideMenu/SideMenu';
 import StoryItem from '../StoryItem/StoryItem';
 import StoryList from '../StoryList/StoryList';
 import styles from './SavedStorisPage.module.css';

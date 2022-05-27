@@ -1,0 +1,16 @@
+.side-menu {
+  position: fixed;
+  top: 60px;
+  width: 220px;
+  height: 100%;
+  background-color: rgb(242, 242, 242);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .side-menu {
+    display: none;
+  }
+}

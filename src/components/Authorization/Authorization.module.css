@@ -1,0 +1,181 @@
+.profile {
+  position: relative;
+}
+
+.profile__button {
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile__button:hover {
+  transform: scale(1.1);
+  background-color: rgb(201 227 253);
+}
+
+.profile__arrow {
+  width: 25px;
+  height: 25px;
+  background-image: url(../../images/arrov.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.popover {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 52px;
+  left: -146px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: -3px -4px 6px rgb(255 255 255 / 50%), 5px 3px 15px rgb(70 70 70 / 12%);
+  width: 220px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.popover_active {
+  display: flex;
+}
+
+.popover__title {
+  font-size: 16px;
+  color: rgb(144 144 144);
+  margin: 0 0 8px;
+}
+
+.popover__item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 0;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.popover__item:hover {
+  background-color: rgba(209, 209, 209, 0.664);
+}
+
+.popover__list {
+  margin: 0;
+  padding: 0;
+}
+
+.popover__image {
+  width: 28px;
+  height: 28px;
+  margin-left: 5px;
+  margin-right: 8px;
+  background-size: cover;
+}
+
+.popover__image_account {
+  background-image: url(../../images/user.png);
+}
+
+.popover__image_save {
+  background-image: url(../../images/save.svg);
+}
+
+.popover__image_settings {
+  background-image: url(../../images/settings.png);
+}
+
+.popover__image_exit {
+  background-image: url(../../images/exit.png);
+}
+
+.popover__text_red {
+  color: red;
+}
+
+.popover__link {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  width: 118px;
+  height: 30px;
+  border-radius: 100px;
+  border: 1px solid rgb(97, 140, 251);
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: rgb(163, 213, 254);
+}
+
+.signup {
+  width: 118px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: rgb(97, 140, 251);
+  border: 0;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+
+.header__signup:hover {
+  background-color: rgb(128, 164, 255);
+}
+
+.profile__account {
+  width: 35px;
+  height: 35px;
+  border: 0;
+  background-color: transparent;
+  background-image: url(../../images/account.svg);
+  cursor: pointer;
+}
+
+.profile__account:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1200px) {
+  .login {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .signup {
+    width: 80px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .login {
+    display: none;
+  }
+
+  .signup {
+    display: none;
+  }
+}

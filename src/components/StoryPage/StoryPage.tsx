@@ -8,7 +8,7 @@ import { IStory } from '../../types/types';
 import Comments from '../Comments/Comments';
 import Header from '../Header/Header';
 import Loader from '../Loader/Loader';
-import Naviagation from '../Navigation/Navigation';
+import Naviagation from '../SideMenu/SideMenu';
 import StoryItem from '../StoryItem/StoryItem';
 import styles from './StoryPage.module.css';
 

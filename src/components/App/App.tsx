@@ -11,6 +11,7 @@ import Loader from '../Loader/Loader';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
 import SavedStoriesPage from '../SavedStorisPage/SavedStorisPage';
+import Sidebar from '../Sidebar/Sidebar';
 import StoryPage from '../StoryPage/StoryPage';
 import TopNewsPage from '../TopNewsPage/TopNewsPage';
 import UserInfoPage from '../UserInfoPage/UserInfoPage';
@@ -45,6 +46,7 @@ function App() {
         </Routes>
         <Login loginUser={handleLoginUser} />
         <Register loginUser={handleLoginUser} />
+        <Sidebar />
       </BrowserRouter>
     </div>
   );

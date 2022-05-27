@@ -5,7 +5,7 @@ import Header from '../Header/Header';
 import StoryList from '../StoryList/StoryList';
 import styles from '../LatestNewsPage/LatestNewsPage.module.css';
 import { fetchStories, fetchStoriesIds } from '../../store/reducers/StoriesSlice';
-import Naviagation from '../Navigation/Navigation';
+import Naviagation from '../SideMenu/SideMenu';
 
 const TopNewsPage: FC = () => {
   const dispatch = useAppDispatch();
