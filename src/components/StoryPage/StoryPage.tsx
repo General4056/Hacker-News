@@ -50,7 +50,7 @@ const StoryPage: FC = () => {
             <Loader />
           </div>
         ) : (
-          <>
+          <div className={styles.stories__list}>
             <div className={styles.stories__header}>
               <div className={styles.stories__container}>
                 <p className={styles.stories__time}>
@@ -70,7 +70,7 @@ const StoryPage: FC = () => {
               <h3 className={styles.stories__subtitle}>Comments ({story.descendants})</h3>
               {story.kids ? <Comments commentIds={story.kids} /> : <div>no comments</div>}
             </div>
-          </>
+          </div>
         )}
       </div>
     </>

@@ -121,7 +121,7 @@
   }
 
   .search {
-    width: 90%;
+    width: 75%;
   }
   .burger-button {
     display: block;
@@ -129,5 +129,20 @@
 
   .header__title {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .search__input::placeholder {
+    font-size: 14px;
+  }
+  .search {
+    width: 50%;
   }
 }

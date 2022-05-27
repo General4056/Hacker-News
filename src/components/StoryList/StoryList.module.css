@@ -18,3 +18,9 @@
     width: 50%;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .stories {
+    width: 90%;
+  }
+}
