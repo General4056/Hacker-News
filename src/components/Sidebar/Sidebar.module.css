@@ -89,7 +89,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .sidebar__container {
     width: 100%;
   }

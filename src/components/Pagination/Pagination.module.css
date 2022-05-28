@@ -64,3 +64,19 @@
 .pagination__button_next {
   background-image: url(../../images/right.png);
 }
+
+@media screen and (max-width: 500px) {
+  .pagination {
+    margin: 10px;
+  }
+
+  .pagination__item {
+    width: 24px;
+    height: 24px;
+  }
+
+  .pagination__button {
+    width: 24px;
+    height: 24px;
+  }
+}
