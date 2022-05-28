@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 import { useInput } from '../../hooks/useInput';
-import { openLoginPopup, openRegisterPopup } from '../../store/reducers/PopupSlice';
+import { openLoginPopup, openNotification, openRegisterPopup } from '../../store/reducers/PopupSlice';
 
 import styles from './Login.module.css';
 
@@ -47,6 +47,7 @@ const Login: FC<LoginProps> = ({ loginUser }) => {
     e.preventDefault();
     loginUser('defaultUser', emailInput.value);
     handleClose();
+    dispatch(openNotification({ title: 'Success!', text: 'you have successfully logged in' }));
   }
 
   return (
@@ -58,7 +59,7 @@ const Login: FC<LoginProps> = ({ loginUser }) => {
             HACKER NEWS
           </div>
         </div>
-        <div>
+        <div className={styles.login__container}>
           <form className={styles.login__form}>
             <h2 className={styles.login__title}>Вход в аккаунт</h2>
             <label className={styles.login__label}>

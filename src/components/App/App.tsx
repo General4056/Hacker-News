@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import { useAppDispatch } from '../../hooks/redux';
 import { clearUser, createUser, loginUser } from '../../store/reducers/LoginUserSlice';
+import { openNotification } from '../../store/reducers/PopupSlice';
 import { clearSavedStories } from '../../store/reducers/SavedStoresSlice';
 import BestStoriesPage from '../BestStoriesPage/BestStoriesPage';
 import Header from '../Header/Header';
@@ -9,6 +10,7 @@ import JobsPage from '../JobsPage/JobsPage';
 import LatestNewsPage from '../LatestNewsPage/LatestNewsPage';
 import Loader from '../Loader/Loader';
 import Login from '../Login/Login';
+import Notification from '../Notificaion/Notification';
 import Register from '../Register/Register';
 import SavedStoriesPage from '../SavedStorisPage/SavedStorisPage';
 import Sidebar from '../Sidebar/Sidebar';
@@ -29,6 +31,7 @@ function App() {
     dispatch(clearUser());
     dispatch(loginUser(false));
     dispatch(clearSavedStories());
+    dispatch(openNotification({ title: 'Success!', text: 'you have been logged out' }));
   }
 
   return (
@@ -47,6 +50,7 @@ function App() {
         <Login loginUser={handleLoginUser} />
         <Register loginUser={handleLoginUser} />
         <Sidebar />
+        <Notification />
       </BrowserRouter>
     </div>
   );

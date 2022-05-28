@@ -1,0 +1,60 @@
+.success {
+  display: flex;
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  width: 400px;
+  padding: 20px;
+  background-color: #d6ffd6;
+  border-radius: 0 8px 8px 0;
+  border-left: 4px solid green;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+}
+
+.success_active {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.success__image {
+  background-color: #008e00;
+  height: 40px;
+  width: 40px;
+  background-image: url(https://assets.codepen.io/3341051/check3.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  border-radius: 100%;
+}
+
+.success__container {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.success__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.success__text {
+  margin: 0;
+  font-size: 16px;
+}
+
+.success__close {
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url(../../images/close.svg);
+  background-size: contain;
+  cursor: pointer;
+  border: 0;
+}

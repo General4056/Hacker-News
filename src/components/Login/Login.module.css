@@ -47,6 +47,12 @@
   background-repeat: no-repeat;
 }
 
+.login__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .login__text {
   font-size: 16px;
   font-weight: 700;
@@ -146,5 +152,34 @@
 }
 
 .login__auth {
-  margin: 0 0 0 50px;
+  margin: 0;
+}
+
+@media screen and (max-width: 680px) {
+  .login {
+    flex-direction: column;
+  }
+  .login__image {
+    display: none;
+  }
+
+  .login__form {
+    width: 500px;
+  }
+
+  .login {
+    display: flex;
+    position: relative;
+    width: 95%;
+    margin: 0 10px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .login__form {
+    width: 320px;
+  }
 }

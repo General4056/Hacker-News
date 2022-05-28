@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 import { useInput } from '../../hooks/useInput';
-import { openLoginPopup, openRegisterPopup } from '../../store/reducers/PopupSlice';
+import { openLoginPopup, openNotification, openRegisterPopup } from '../../store/reducers/PopupSlice';
 
 import styles from './../Login/Login.module.css';
 
@@ -49,6 +49,7 @@ const Register: FC<RegisterProps> = ({ loginUser }) => {
     e.preventDefault();
     loginUser(nameInput.value, emailInput.value);
     handleClose();
+    dispatch(openNotification({ title: 'Success!', text: 'your registration was successfully completed' }));
   }
 
   function handleLoginPopup() {
@@ -65,7 +66,7 @@ const Register: FC<RegisterProps> = ({ loginUser }) => {
             HACKER NEWS
           </div>
         </div>
-        <div>
+        <div className={styles.login__container}>
           <form className={styles.login__form}>
             <h2 className={styles.login__title}>Регистрация</h2>
             <label className={styles.login__label}>
